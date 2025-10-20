@@ -1,0 +1,44 @@
+{
+  "name": "bun-metascraper",
+  "module": "metascrape-with-headless.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@samirrayani/metascraper-shopping": "samirrayani/metascraper-shopping",
+    "metascraper": "^5.49.5",
+    "metascraper-address": "^1.0.0",
+    "metascraper-amazon": "^5.49.5",
+    "metascraper-audio": "^5.49.5",
+    "metascraper-author": "^5.49.5",
+    "metascraper-clearbit": "^5.49.2",
+    "metascraper-date": "^5.49.5",
+    "metascraper-description": "^5.49.5",
+    "metascraper-feed": "^5.49.5",
+    "metascraper-iframe": "^5.49.5",
+    "metascraper-image": "^5.49.5",
+    "metascraper-instagram": "^5.49.5",
+    "metascraper-lang": "^5.49.5",
+    "metascraper-logo": "^5.49.5",
+    "metascraper-logo-favicon": "^5.49.5",
+    "metascraper-manifest": "^5.49.5",
+    "metascraper-media-provider": "^5.49.5",
+    "metascraper-publisher": "^5.49.5",
+    "metascraper-readability": "^5.49.6",
+    "metascraper-soundcloud": "^5.49.5",
+    "metascraper-spotify": "^5.49.5",
+    "metascraper-telegram": "^5.49.5",
+    "metascraper-title": "^5.49.5",
+    "metascraper-uol": "^5.49.5",
+    "metascraper-url": "^5.49.5",
+    "metascraper-video": "^5.49.5",
+    "metascraper-x": "^5.49.5",
+    "metascraper-youtube": "^5.49.5",
+    "playwright": "^1.56.1"
+  }
+}
