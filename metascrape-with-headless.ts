@@ -147,22 +147,24 @@ async function scrape(url: string) {
 }
 
 const urls: Array<string> = [
-  "https://www.amazon.co.uk/R%C3%98DE-Studio-quality-Microphone-Podcasting-Production/dp/B084P1CXFD?ref_=ast_sto_dp&th=1",
-  "https://www.amazon.co.uk/LG-43UA73006LA-Concierge-Processor-Optimiser/dp/B0F3XNWZKJ?pd_rd_w=s5NxQ&content-id=amzn1.sym.874ad601-1d84-4bb3-909a-1fbefdb4a319&pf_rd_p=874ad601-1d84-4bb3-909a-1fbefdb4a319&pf_rd_r=YRZCF1N6PV501Q4S99PZ&pd_rd_wg=GSGYM&pd_rd_r=08f020e6-8158-4804-90b5-8d40dcf225e0&pd_rd_i=B0F3XNWZKJ&ref_=gsps5bestsellers_B0F3XNWZKJ&th=1",
-  "https://www.amazon.co.uk/Professional-Grade-Microphone-Recording-Exceptional-Directly/dp/B00MMKQOEM?ref_=ast_sto_dp&th=1",
-  "https://soundcloud.com/lithe9/pessimist-1",
-  "https://www.youtube.com/watch?v=5az_4IwTwAE",
-  "https://anything.io",
-  "https://x.com/thdxr/status/1980306364254838830",
-  "https://open.spotify.com/album/5pIGU5FZ74YPdUrBdk9lcC?highlight=spotify:track:0l72HGRQkAR0imHxvpLi8a",
-  "https://migbytilak.com/en-global",
-  "https://maps.app.goo.gl/dB2r2gikPR6qRA187",
-  "https://www.islingtonboxingclub.org/",
-  "https://www.brasshands.com/",
-  "https://simonwillison.net/2025/Oct/16/claude-skills/",
-  "https://github.com/repomirrorhq/repomirror/blob/main/repomirror.md",
-  "https://www.instagram.com/traum.inc/", //profile
-  "https://www.instagram.com/p/DP89AxmDO4x/?img_index=1", // post
+  // "https://www.amazon.co.uk/R%C3%98DE-Studio-quality-Microphone-Podcasting-Production/dp/B084P1CXFD?ref_=ast_sto_dp&th=1",
+  // "https://www.amazon.co.uk/LG-43UA73006LA-Concierge-Processor-Optimiser/dp/B0F3XNWZKJ?pd_rd_w=s5NxQ&content-id=amzn1.sym.874ad601-1d84-4bb3-909a-1fbefdb4a319&pf_rd_p=874ad601-1d84-4bb3-909a-1fbefdb4a319&pf_rd_r=YRZCF1N6PV501Q4S99PZ&pd_rd_wg=GSGYM&pd_rd_r=08f020e6-8158-4804-90b5-8d40dcf225e0&pd_rd_i=B0F3XNWZKJ&ref_=gsps5bestsellers_B0F3XNWZKJ&th=1",
+  // "https://www.amazon.co.uk/Professional-Grade-Microphone-Recording-Exceptional-Directly/dp/B00MMKQOEM?ref_=ast_sto_dp&th=1",
+  // "https://soundcloud.com/lithe9/pessimist-1",
+  // "https://www.youtube.com/watch?v=5az_4IwTwAE",
+  // "https://anything.io",
+  // "https://x.com/thdxr/status/1980306364254838830",
+  // "https://open.spotify.com/album/5pIGU5FZ74YPdUrBdk9lcC?highlight=spotify:track:0l72HGRQkAR0imHxvpLi8a",
+  // "https://migbytilak.com/en-global",
+  // "https://maps.app.goo.gl/dB2r2gikPR6qRA187",
+  // "https://www.islingtonboxingclub.org/",
+  // "https://www.brasshands.com/",
+  // "https://simonwillison.net/2025/Oct/16/claude-skills/",
+  // "https://github.com/repomirrorhq/repomirror/blob/main/repomirror.md",
+  // "https://www.instagram.com/traum.inc/", //profile
+  // "https://www.instagram.com/p/DP89AxmDO4x/?img_index=1", // post
+  // "https://blog.abdellatif.io/production-rag-processing-5m-documents",
+  "https://replicate.com/wan-video/wan-2.2-animate-replace",
 ];
 
 function sleep(ms: number) {

@@ -1,4 +1,4 @@
-```
+```JS
 
 bun run metascrape-with-headless.ts
 scraping url: https://www.amazon.co.uk/R%C3%98DE-Studio-quality-Microphone-Podcasting-Production/dp/B084P1CXFD?ref_=ast_sto_dp&th=1
