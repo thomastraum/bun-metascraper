@@ -32,36 +32,7 @@ import metascraperYoutube from "metascraper-youtube";
 // import metascraperShopping from "samirrayani/metascraper-shopping";
 //
 //
-import { chromium, type Browser } from "playwright";
-
-let sharedBrowser: Browser | null = null;
-let cleanupRegistered = false;
-
-async function getBrowser(): Promise<Browser> {
-  if (sharedBrowser) return sharedBrowser;
-  sharedBrowser = await chromium.launch({ headless: true });
-  registerBrowserCleanup();
-  return sharedBrowser;
-}
-
-function registerBrowserCleanup() {
-  if (cleanupRegistered) return;
-  cleanupRegistered = true;
-  const clean = () => {
-    if (!sharedBrowser) return;
-    void sharedBrowser.close();
-    sharedBrowser = null;
-  };
-  process.on("exit", clean);
-  process.on("SIGINT", () => {
-    clean();
-    process.exit(130);
-  });
-  process.on("SIGTERM", () => {
-    clean();
-    process.exit(143);
-  });
-}
+import { getHtml } from "./playwright-scraper";
 
 const scraper = metascraper([
   // require('metascraper-author')
@@ -109,26 +80,6 @@ const scraper = metascraper([
   // metascraperShopping(),
 ]);
 
-async function scrapeWithPlaywright(url: string) {
-  console.log("Scraping with Playwright");
-  const startTime = Date.now();
-  const browser = await getBrowser();
-  const page = await browser.newPage();
-  try {
-    await page.goto(url, { waitUntil: "domcontentloaded" });
-
-    const html = await page.content();
-    const seconds = ((Date.now() - startTime) / 1000).toFixed(2);
-    console.log(`Time taken: ${seconds} seconds`);
-    return html;
-  } catch (error) {
-    console.error("Error scraping URL:", error);
-    throw error;
-  } finally {
-    await page.close();
-  }
-}
-
 async function scrapeWithFetch(url: string) {
   try {
     const response = await fetch(url);
@@ -141,7 +92,7 @@ async function scrapeWithFetch(url: string) {
 }
 
 async function scrape(url: string) {
-  const html = await scrapeWithPlaywright(url);
+  const html = await getHtml(url);
   // const html = scrapeWithFetch(url);
   return await scraper({ html, url });
 }

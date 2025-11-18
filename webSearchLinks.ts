@@ -1,0 +1,41 @@
+// Shared test URLs so each web search script runs against identical inputs.
+export const WEB_SEARCH_URLS = [
+    "https://www.zeroentropy.dev/",
+//     "https://www.api-football.com/",
+//     "https://huggingface.co/zeroentropy/zerank-1",
+//     "https://migbytilak.com/en-global",
+//     "https://www.youtube.com/watch?v=WaerLR6t6wE&list=RDSJiB7IUz_eg&index=9",
+//     "https://panik.design/products/georg-jensen-bernadotte-oval-vase",
+//     "https://x.com/Be_like_Sage/status/1970525185032806716",
+    "https://inbound.new",
+    "https://www.youtube.com/watch?v=KUEmEb71vzQ&t=1s",
+//     "https://x.com/zo_computer",
+//     "https://x.com/ID_AA_Carmack/status/1975942975093166271",
+//     "https://x.com/ID_AA_Carmack/status/1978451685413462248",
+//     "https://x.com/ID_AA_Carmack/status/1975942975093166271",
+//     "https://x.com/thdxr/status/1983529288109326707?s=46&t=L1wiCUNrO5Ld9nXa94g0fg",
+//     "https://soundcloud.com/buttechno/hypno-dub",
+    
+//     // "https://replicate.com/wan-video/wan-2.2-animate-replace",
+//     "https://www.tradingview.com/symbols/LSE-GDWN/",
+//     "https://www.instagram.com/mathieubdt/",
+//     "https://x.com/jayair/status/1971341359530582434",
+//     "https://www.youtube.com/watch?v=LM0fX365AAA",
+//     "https://soundcloud.com/thelotradio/ballet-with-chantssss-the-lot",
+//     "https://gloochat.notion.site/benefits-of-baml",
+//     "https://x.com/drgurner/status/1964321553656512661",
+//     "https://www.bee-link.com/products/beelink-gti-ex-bundle",
+//     "https://joincolossus.com/episode/the-power-of-story/",
+//     "https://twitter.com/elonmusk/status/123456789",
+    "https://www.instagram.com/p/ABC123/",
+//     "https://www.instagram.com/p/DQ6fpSTkfsB/",
+//     "https://x.com/mitchellh/status/1988701952709128494",
+    "https://writethat.blog/",
+//     "https://soundcloud.com/lithe9/pessimist-1",
+//     "https://www.russell-clark.com/p/is-pro-labour-acutally-pro-investment?utm_source=post-email-title&publication_id=553073&post_id=178675848&utm_campaign=email-post-title&isFreemail=true&r=63nj&triedRedirect=true&utm_medium=email",
+//     "https://www.vivobarefoot.com/uk/primus-lite-knit-mens",
+//     "https://global.morningstar.com/en-gb/investments/funds/F00001E43W/chart",
+  ] as const;
+  
+  export type WebSearchUrl = (typeof WEB_SEARCH_URLS)[number];
+  

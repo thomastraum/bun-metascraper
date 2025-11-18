@@ -41,3 +41,15 @@ playwright/.cache
 .vscode/
 .tmp/
 tmp/
+
+# image file types
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.bmp
+*.tiff
+*.webp
+*.ico
+*.icns
